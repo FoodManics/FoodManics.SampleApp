@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manics.food.foodmanics" >
+
+    <uses-sdk android:minSdkVersion="12"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.manics.food.SigninScreen"
+            android:label="@string/title_activity_signinscreen"
+            android:theme="@style/NoActionBarTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.manics.food.SignUp_Screen"
+            android:label="@string/title_activity_item_selection">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manics.food.SigninScreen" />
+        </activity>
+
+        <activity
+            android:name="com.manics.food.Home_Page"
+            android:label="@string/title_activity_item_selection">
+        </activity>
+        <activity
+            android:name="com.manics.food.ItemSelection"
+            android:label="@string/title_activity_item_selection">
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manics.food.Home_Page" />
+        </activity>
+        <activity
+            android:name="com.manics.food.PaymentCartIntegration.PaymentPage"
+            android:label="@string/title_activity_payment_page" >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manics.food.Home_Page" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+    </application>
+
+</manifest>

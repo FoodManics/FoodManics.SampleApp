@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:padding="6dp"
+    android:id="@+id/listMenus" >
+
+
+    <ImageView
+        android:id="@+id/imageViewExp1"
+        android:layout_width="70dp"
+        android:layout_height="1000dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/thirdLine"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/imageViewExp1"
+        android:layout_toEndOf="@id/imageViewExp1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Test"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/imageViewExp1"
+        android:layout_toEndOf="@id/imageViewExp1"
+        android:layout_alignWithParentIfMissing="true"
+        android:ellipsize="marquee"
+        android:text="Test"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/imageViewExp1"
+        android:layout_toEndOf="@id/imageViewExp1"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Test"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
+
