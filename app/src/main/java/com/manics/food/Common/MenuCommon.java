@@ -1,7 +1,5 @@
 package com.manics.food.Common;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,9 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
-
-import com.manics.food.Home_Page;
 import com.manics.food.foodmanics.R;
+import android.net.Uri;
 
 /**
  * Created by Yash on 8/30/2015.
@@ -42,6 +39,8 @@ public class MenuCommon extends AppCompatActivity{
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        Intent intent,chooser=null;
+
 
         //noinspection SimplifiableIfStatement
         switch (id){
@@ -51,6 +50,10 @@ public class MenuCommon extends AppCompatActivity{
             }
             case R.id.contctus:{
                 Toast.makeText(this, "Please call us at 911911911 or visit our website www.khamosh.com", Toast.LENGTH_LONG).show();
+                intent=new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:38.9197153,-77.2386953"));
+                chooser=Intent.createChooser(intent,"Launch Maps app");
+                startActivity(chooser);
                 return true;
             }
             case R.id.aboutus:{
@@ -71,6 +74,7 @@ public class MenuCommon extends AppCompatActivity{
             case R.id.feedback:{
                 return true;
             }
+            //Represents the back button ID on each tool bar, default provided by android framework
             case R.id.home:{
                 NavUtils.navigateUpFromSameTask(this);
             }

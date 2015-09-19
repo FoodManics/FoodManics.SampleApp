@@ -1,9 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release_config {
+            keyAlias 'sample_key'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
-
     defaultConfig {
         applicationId "com.manics.food.foodmanics"
         minSdkVersion 12
@@ -13,11 +17,13 @@ android {
     }
     buildTypes {
         release {
+            debuggable true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release_config
         }
         debug {
-            debuggable false
+            debuggable true
             zipAlignEnabled false
         }
     }
