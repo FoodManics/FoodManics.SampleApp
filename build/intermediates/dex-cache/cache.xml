@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-e9bc7ae1ab86113c79c197aec0c552c8480201b9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-2404f7fa6e36e8ba8f5a70cb67c5b2cd9098957c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-29fad823eac8fe9c6b43a6c403cea321572cf1f4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-beca94cee770b9c0b78f9d64d09d98fb83a8c0cf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-cb6b96de05a4a38d96600859125fa9411fa89866.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-9b1b5b5b423687e0105f046d13356fdd2ecc8dab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.braintreepayments\card-form\2.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e3c355553b4bd7c3a22bc21f483b91a746f2685b">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-c44aaff3aba4d970930bed964d602c08ab7ec551.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.braintreepayments.api\braintree\1.6.5\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b8ef8dc89d8427a9ab0416a94bf34dfa90e8b615">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-97bf956ba097240a8fc7d2ef65b17f2911ccb2b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\.gradle\caches\modules-2\files-2.1\com.braintreepayments.api\braintree-api\1.6.5\9d93c6ae586d4067d5978fd151d6e0504fe3b0c8\braintree-api-1.6.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9d93c6ae586d4067d5978fd151d6e0504fe3b0c8">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\braintree-api-1.6.5-cc5eee93ee5a8115d4c71e274a50cc4cba20c36f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\.gradle\caches\modules-2\files-2.1\com.braintreepayments.api\data\1.6.5\3fc9e0c69a371b676d80693d56b28e6a73f0f13b\data-1.6.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3fc9e0c69a371b676d80693d56b28e6a73f0f13b">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\data-1.6.5-bd9d243d037e4fb591b97a7cf9a49b4b5743df3c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-5f40babda9b2b930397ccb1c518a1c0745a37d97.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-4053cd7210c23e4310dee047bea71963952ea3cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\gson-2.3.1-43dfecdd5cac3cc5f9f097b5aebe1e9c9e9b5304.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-8273832731506bf51952f12cce97be113f202a5e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-bad2945f05783651e725878520bdb784178fec9f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-38cd4e986475b022285cb599ec00b0eb81f68072.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-bd580375eafeb46251986409d0213a68cb4412bf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-b20363c9d5e0d4e7d81041ce545163a060c0f055.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-0903e95a566df47968b600140b22ba59dcec4373.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-33d4b687fbbd4c6903b85d609e318927cb443d9d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-6989479306a8b6531023ee818b2e4a7f9daed4cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-c103c411b34a49f761b105de03f37b4e144b3daa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-3dce1c145fa1271277c5be2a5d0e309f50ff837d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-fff804cc8c50c594bd01d802761a6c65ff7009c5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-085f4794cf060d287488cf4c96812a94812dbab8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-76c4c9d46ee335b8c6a333c02b8a576e6c7166b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-b6648e81b6bc4dac93e503359093360e099615be.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-ebdbfa0da69ee284198c6477865ebea9aa941b8f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-78c05ea5f5a6843acabecaadc0ad3f2735005818.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-e5e52f1fb121812feedbeeba6baf31f3e82d6634.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-b87cf5a092e136880d7fe3b1538b44682cd8305e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="C:\Users\Yash\AndroidStudioProjects\FoodManics\app\build\intermediates\pre-dexed\debug\classes-9787e6593cd26d157ecba7968efc2a1724ecb0d5.jar" />
+    </item>
+
+</items>
