@@ -13,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -54,6 +55,7 @@ public class NavigationDrawer_Frag extends android.support.v4.app.Fragment {
             mFromSavedInstanceState = true;
         }
         Log.d("Assigning Classvalue", "OnCreateFinished");
+
     }
 
     @Override
@@ -65,6 +67,24 @@ public class NavigationDrawer_Frag extends android.support.v4.app.Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         navBarRecycleViewAdapt = new NavigationBarRecyclerViewAdapter(getActivity(), createObjectList());
         recyclerView.setAdapter(navBarRecycleViewAdapt);
+        recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+            @Override
+            public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
+                View child = recyclerView.findChildViewUnder(motionEvent.getX(),motionEvent.getY());
+                Log.d("DebugLogs", "onInterceptTouchEvent");
+                if(child!=null){
+
+                    return true;
+                }
+                return false;
+            }
+
+            @Override
+            public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
+                Log.d("DebugLogs", "onTouchEvent");
+            }
+        });
+
         return layout;
     }
 

@@ -82,6 +82,8 @@ public class NavigationBarRecyclerViewAdapter extends RecyclerView.Adapter<Navig
         public MyViewHolder(View itemView){
             super(itemView);
 
+            itemView.setClickable(true);
+
             rowItemText_recyclerView=(TextView)itemView.findViewById(R.id.rowItemText_recyclerView);
             rowItemImage_recyclerView=(ImageView)itemView.findViewById(R.id.rowItemImage_recyclerView);
             itemView.setOnClickListener(new View.OnClickListener() {
