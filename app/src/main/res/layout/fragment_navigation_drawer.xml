@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="#DADADA"
     android:orientation="vertical"
+    android:alpha="0.8"
     android:clickable="true"
     tools:context="com.manics.food.NavigationDrawer.NavigationDrawer_Frag">
 

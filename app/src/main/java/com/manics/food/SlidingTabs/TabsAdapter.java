@@ -1,14 +1,9 @@
 package com.manics.food.SlidingTabs;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.util.Log;
-
-import com.manics.food.foodmanics.R;
 
 import java.util.List;
 
@@ -18,7 +13,7 @@ import java.util.List;
 public class TabsAdapter extends FragmentStatePagerAdapter {
 
     private List<Fragment> fragmentList;
-    private String[] titles={"Full Menu", "Lunch Menu", "Dinner Menu","Snacks","Beverages","Desserts"};
+    private String[] titles={"Menu Highlight", "Lunch Menu", "Dinner Menu","Snacks","Beverages","Desserts"};
 
     public TabsAdapter(FragmentManager fm, List<Fragment> fragList){
         super(fm);
@@ -30,10 +25,12 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
 
         Fragment frag=fragmentList.get(position);
 
-        Bundle b=new Bundle();
-        b.putInt("position",position);
-        frag.setArguments(b);
-        //Log.d("Value", ""+fragmentList.get(f).getId());
+        if(frag.getArguments()!= null){
+            Bundle b=frag.getArguments();
+            b.putInt("position", position);
+            frag.setArguments(b);
+        }
+        //Log.d("inAdapterValue", ""+fragmentList.get(position).getArguments().getParcelableArrayList("QuickManuListFrag").size());
         return frag;
     }
 

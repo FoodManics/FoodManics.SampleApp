@@ -15,37 +15,36 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+         <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+            <com.manics.food.SlidingTabs.SlidingTabLayout
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.manics.food.SlidingTabs.SlidingTabLayout>
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/home_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </android.support.v4.view.ViewPager>
+
+          </LinearLayout>
+
       <fragment
-        android:id="@+id/navBar"
-        android:layout_height="match_parent"
-        android:layout_width="250dp"
-        android:layout_gravity="start"
-        android:clickable="true"
-        app:layout="@layout/fragment_navigation_drawer"
-        android:name="com.manics.food.NavigationDrawer.NavigationDrawer_Frag"
-        tools:layout="@layout/fragment_navigation_drawer" />
-
-                 <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:orientation="vertical">
-
-                    <com.manics.food.SlidingTabs.SlidingTabLayout
-                        android:id="@+id/tabs"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </com.manics.food.SlidingTabs.SlidingTabLayout>
-
-                    <android.support.v4.view.ViewPager
-                        xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:id="@+id/home_viewpager"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" >
-                    </android.support.v4.view.ViewPager>
-
-                 </LinearLayout>
-      
+          android:id="@+id/navBar"
+          android:layout_height="match_parent"
+          android:layout_width="250dp"
+          android:layout_gravity="start"
+          android:clickable="true"
+          app:layout="@layout/fragment_navigation_drawer"
+          android:name="com.manics.food.NavigationDrawer.NavigationDrawer_Frag"
+          tools:layout="@layout/fragment_navigation_drawer" />
 
   </android.support.v4.widget.DrawerLayout>
 

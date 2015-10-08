@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Text_Map_Search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/search_map_button"
+            android:text="@string/searchMapButton"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:onClick="onMapSearch"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <fragment
+            android:id="@+id/gmaplocation"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="530dp"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/map_zoomin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickZoomIn"
+                android:src="@drawable/zoom_in" />
+
+            <ImageButton
+                android:id="@+id/map_zoomout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="onClickZoomIn"
+                android:paddingTop="20dp"
+                android:src="@drawable/zoom_out" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+

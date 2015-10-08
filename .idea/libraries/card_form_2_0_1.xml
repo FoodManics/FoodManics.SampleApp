@@ -5,6 +5,8 @@
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.braintreepayments/card-form/2.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.braintreepayments/card-form/2.0.1/c83f2ce1d34eb1a9fc06069994af37d9002f8236/card-form-2.0.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

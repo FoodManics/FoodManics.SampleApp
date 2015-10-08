@@ -4,6 +4,9 @@ android {
     signingConfigs {
         release_config {
             keyAlias 'sample_key'
+            keyPassword ''
+            storeFile file('C:/Users/Yash/AndroidStudioProjects/keystore/samplekeystore.jks')
+            storePassword ''
         }
     }
     compileSdkVersion 22
@@ -24,7 +27,9 @@ android {
         }
         debug {
             debuggable true
-            zipAlignEnabled false
+            zipAlignEnabled true
+            signingConfig signingConfigs.release_config
+            minifyEnabled true
         }
     }
 }
@@ -34,5 +39,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.+'
     compile 'com.android.support:recyclerview-v7:22.0.+'
     compile 'com.google.android.gms:play-services:7.5.0'
-    compile 'com.braintreepayments.api:braintree:1.+'
+    compile 'com.braintreepayments.api:braintree:1.6+'
 }

@@ -25,73 +25,63 @@ public class ListItemExample extends MenuCommon {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_item_example);
 
-        int imageId;
-        imageId = R.drawable.samosa;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("samosa");
         listItems.setItemTitleValue("Item1");
         listItems.setItemDescriptionValue("Item1 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$4.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.burger;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("pizza");
         listItems.setItemTitleValue("Item2");
         listItems.setItemDescriptionValue("Item2 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$10.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.pizza;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item3");
         listItems.setItemDescriptionValue("Item3 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$18.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.chickenwings;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item4");
         listItems.setItemDescriptionValue("Item4 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$8.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.pancake;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item5");
         listItems.setItemDescriptionValue("Item5 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$6.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.springrolls;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item6");
         listItems.setItemDescriptionValue("Item6 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$10.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.wraps;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item7");
         listItems.setItemDescriptionValue("Item7 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$12.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.chickenwings;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item8");
         listItems.setItemDescriptionValue("Item8 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$6.00");
         listItemsList.add(listItems);
 
         listItems = new ListItem();
-        imageId = R.drawable.burger;
-        listItems.setItemImageResourceValue(imageId);
+        listItems.setItemImageResourceValue("");
         listItems.setItemTitleValue("Item9");
         listItems.setItemDescriptionValue("Item9 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$7.00");

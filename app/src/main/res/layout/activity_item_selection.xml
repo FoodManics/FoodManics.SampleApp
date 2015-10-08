@@ -72,22 +72,19 @@
                 android:layout_marginTop="10dp"
                 android:background="#ffff003a" />
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/itemRratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView4"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:paddingTop="15dp"
-                android:progressBackgroundTint="#ffc3c3c3"
-                android:progressTint="#ffff003a"
                 android:rating="4"
-                android:stepSize="0.5"
-                android:textAlignment="gravity" />
+                android:stepSize="0.5" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ratingBar"
+                android:layout_below="@+id/itemRratingBar"
                 android:text="Add to cart and Checkout"
                 android:id="@+id/orderButton"
                 android:layout_gravity="center_vertical" />

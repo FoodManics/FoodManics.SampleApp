@@ -3,10 +3,9 @@ package com.manics.food.Common;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -15,8 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
+
 import com.manics.food.foodmanics.R;
-import android.net.Uri;
+import com.manics.food.foodmanics.maps.Location;
 
 /**
  * Created by Yash on 8/30/2015.
@@ -44,18 +44,6 @@ public class MenuCommon extends AppCompatActivity{
 
         //noinspection SimplifiableIfStatement
         switch (id){
-            case R.id.action_settings:
-            {
-                return true;
-            }
-            case R.id.contctus:{
-                Toast.makeText(this, "Please call us at 911911911 or visit our website www.khamosh.com", Toast.LENGTH_LONG).show();
-                intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("geo:38.9197153,-77.2386953"));
-                chooser=Intent.createChooser(intent,"Launch Maps app");
-                startActivity(chooser);
-                return true;
-            }
             case R.id.aboutus:{
                 AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
                 a_builder.setMessage("We are a bunch of geeks!!!")
@@ -71,12 +59,25 @@ public class MenuCommon extends AppCompatActivity{
                 alert.show();
                 return true;
             }
+            case R.id.contctus:{
+                Toast.makeText(this, "Please call us at 911911911 or visit our website www.khamosh.com", Toast.LENGTH_LONG).show();
+                intent=new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:38.9197153,-77.2386953"));
+                chooser=Intent.createChooser(intent,"Launch Maps app");
+                startActivity(chooser);
+                return true;
+            }
+            case R.id.locateus:{
+                intent=new Intent(MenuCommon.this, Location.class);
+                startActivity(intent);
+                return true;
+            }
             case R.id.feedback:{
                 return true;
             }
-            //Represents the back button ID on each tool bar, default provided by android framework
-            case R.id.home:{
-                NavUtils.navigateUpFromSameTask(this);
+           case R.id.action_settings:
+            {
+                return true;
             }
             case R.id.nextPageIcon:{
                 if(this.getLocalClassName().equals("com.manics.food.Home_Page")){
@@ -86,6 +87,10 @@ public class MenuCommon extends AppCompatActivity{
                 }else if(this.getLocalClassName().equals("com.manics.food.PaymentPage")){
                     //startActivity(new Intent());
                 }
+            }
+            //Represents the back button ID on each tool bar, default provided by android framework
+            case R.id.home:{
+                NavUtils.navigateUpFromSameTask(this);
             }
         }
 

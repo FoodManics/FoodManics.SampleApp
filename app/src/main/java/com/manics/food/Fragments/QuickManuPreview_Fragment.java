@@ -11,13 +11,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.manics.food.Home_Page;
 import com.manics.food.ItemSelection;
 import com.manics.food.ListView.ListItem;
 import com.manics.food.ListView.MySimpleArrayAdapter;
 import com.manics.food.foodmanics.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,8 +36,8 @@ public class QuickManuPreview_Fragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private List<ListItem> listItemsList=new ArrayList<>();
-    private ListItem listItems=new ListItem();
+
+    private ArrayList<ListItem> itemsList;
 
     private OnFragmentInteractionListener mListener;
 
@@ -80,9 +80,14 @@ public class QuickManuPreview_Fragment extends Fragment {
         }
         // Inflate the layout for this fragment
 
+        itemsList=getArguments().getParcelableArrayList(Home_Page.STATE_highlightList);
+
+        Log.d("ReachedQuickItemsMenu","ListSize"+itemsList.size());
+
         View rootView= inflater.inflate(R.layout.fragment_quick_manu_preview_, container, false);
 
-        int imageId;
+
+        /*  int imageId;
         imageId = R.drawable.samosa;
         listItems.setItemImageResourceValue(imageId);
         listItems.setItemTitleValue("Item1");
@@ -152,11 +157,11 @@ public class QuickManuPreview_Fragment extends Fragment {
         listItems.setItemTitleValue("Item9");
         listItems.setItemDescriptionValue("Item9 Description..." + "\n" + "...goes here");
         listItems.setItemPriceValue("$7.00");
-        listItemsList.add(listItems);
+        listItemsList.add(listItems);*/
 
         ListView listview = (ListView)rootView.findViewById(R.id.listMenu);
 
-        final MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this.getActivity(), android.R.layout.simple_list_item_single_choice, listItemsList);
+        final MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this.getActivity(), android.R.layout.simple_list_item_single_choice, itemsList);
         listview.setAdapter(adapter);
 
         listview.setOnItemClickListener(
@@ -174,17 +179,13 @@ public class QuickManuPreview_Fragment extends Fragment {
     public void listItemSelectListener(AdapterView<?> parent, final View view,int position, long id)
     {
         //final String item = (String) parent.getItemAtPosition(position);
-        ListItem listItems=new ListItem();
-        listItems=listItemsList.get(position);
-        Log.d("Item:", listItems.getItemPriceValue());
+        ListItem listItem=itemsList.get(position);
+        Log.d("Item:", listItem.getItemPriceValue());
 
         Intent selectionDetailsIntent = new Intent(this.getActivity().getBaseContext(), ItemSelection.class);
-        selectionDetailsIntent.putExtra("listItemObject", listItems);
+        selectionDetailsIntent.putExtra("listItemObject", listItem);
         startActivity(selectionDetailsIntent);
     }
-
-
-
 
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -193,7 +194,6 @@ public class QuickManuPreview_Fragment extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
 
     /**
      * This interface must be implemented by activities that contain this

@@ -1,13 +1,23 @@
 package com.manics.food.Fragments;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
+import com.manics.food.Home_Page;
+import com.manics.food.ItemSelection;
+import com.manics.food.ListView.ListItem;
+import com.manics.food.ListView.MySimpleArrayAdapter;
 import com.manics.food.foodmanics.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,6 +32,8 @@ public class DinnerMenuPreview_Fragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private ArrayList<ListItem> itemsList;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -64,16 +76,37 @@ public class DinnerMenuPreview_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dinner_menu_preview_, container, false);
+        itemsList=getArguments().getParcelableArrayList(Home_Page.STATE_dinnerList);
+
+        Log.d("ReachedDinnerItemsMenu", "" + itemsList.size());
+
+        View rootView= inflater.inflate(R.layout.fragment_quick_manu_preview_, container, false);
+        ListView listview = (ListView)rootView.findViewById(R.id.listMenu);
+
+        final MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this.getActivity(), android.R.layout.simple_list_item_single_choice, itemsList);
+        listview.setAdapter(adapter);
+
+        listview.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
+                        listItemSelectListener(parent, view, position, id);
+                    }
+                }
+        );
+        return rootView;
+
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
+    public void listItemSelectListener(AdapterView<?> parent, final View view,int position, long id)
+    {
+        ListItem listItems=itemsList.get(position);
+        Log.d("Item:", listItems.getItemPriceValue());
 
+        Intent selectionDetailsIntent = new Intent(this.getActivity().getBaseContext(), ItemSelection.class);
+        selectionDetailsIntent.putExtra("listItemObject", listItems);
+        startActivity(selectionDetailsIntent);
+    }
 
 
     /**

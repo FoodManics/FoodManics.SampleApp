@@ -5,6 +5,8 @@
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.5/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.braintreepayments.api/braintree/1.6.5/a8a283a1ad40021909412b29ff7767084908e0ac/braintree-1.6.5-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
